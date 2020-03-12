@@ -1,0 +1,17 @@
+.nav-bar {
+    background-color: darkblue;
+    overflow: auto;
+}
+.nav-bar a {
+    color: white;
+}
+  
+.nav-bar ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+.nav-bar li {
+    float: left;
+    margin: 5px 10px;
+}
