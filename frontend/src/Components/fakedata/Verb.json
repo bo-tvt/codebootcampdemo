@@ -1,0 +1,12 @@
+[
+    {"id": 1, "name": "consumed"},
+    {"id": 2, "name": "sacrificed"},
+    {"id": 3, "name": "pawned"},
+    {"id": 4, "name": "purchased"},
+    {"id": 5, "name": "fondled"},
+    {"id": 6, "name": "kissed"},
+    {"id": 7, "name": "envied"},
+    {"id": 8, "name": "worshipped"},
+    {"id": 9, "name": "inspected"},
+    {"id": 10, "name": "hated"}
+]

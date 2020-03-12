@@ -1,0 +1,12 @@
+[
+    {"id": 1, "name": "Why or why not?"},
+    {"id": 2, "name": "Did you like it / would you like to?"},
+    {"id": 3, "name": "Would it be worth it? / Was it worth it?"},
+    {"id": 4, "name": "What would be / is the expected outcome?"},
+    {"id": 5, "name": "Can you guess whether I've done it?"},
+    {"id": 6, "name": "Would you do it (again) if I paid you £20?"},
+    {"id": 7, "name": "Was it / would it be hard?"},
+    {"id": 8, "name": "How did / would it make your mother feel to know you've done it?"},
+    {"id": 9, "name": "Can you name 10 people who have probably done it?"},
+    {"id": 10, "name": "Should that sort of thing be publicly confessed?"}
+]
