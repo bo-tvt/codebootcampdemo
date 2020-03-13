@@ -1,0 +1,70 @@
+
+
+
+
+Voiko tämä olla toimiva randomizer?
+
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const randomMonth = months[Math.floor(Math.random() * months.length)];
+
+
+
+
+*********************
+
+Tällä hetkellä käytän nimiä Herring ja Roi ohjelman kahteen eri toimintoon (Richard Herring ja Susikoira Roi). Onko nämä nimet liian lyhyitä/sekavia?
+
+Onko sillä väliä, miten nimeän käyttämäni tietokannat?
+
+***********************
+
+Alustava Susikoira Roi-vitsin muodostus tuntuu hieman monimutkaiselta/raskaalta. Onko se silti järkevää toteuttaa?
+
+**********************
+
+Yes ja no napit:
+
+Tallenna state vastauksen mukaan (myös undefined). Jos undefined -> ei tagia, muuten oikeasta tietokannasta.
+(Lunttaa: squeeze fruits)
+
+
+**********************
+
+
+Item 1 ja Item 2 -> 2 = while loop jossa 2 arvotaan uusiksi jos se on sama kuin 1.
+
+
+*******************
+
+
+IF-ELSE:
+
+  .then(result => {
+if(result.rowCount > 0) {
+  res.send("OK");
+} else {
+  res.status(404).send("Not found!")
+}
+
+
+
+DATABASE:
+
+Pitääkö/kannattaako DBeaveriin tehdä database jokaiselle komponentille erikseen vai teenkö mieluummin yhteen tiedostoon ison läjän pienempiä listoja?
+
+Miten suosittelet lisäämään sanakirjan databaseen? 
+
+Olisiko ainakin Roi-verbien suhteen järkevämpää lisätä niitä manuaalisesti?
+
+RANDOMIZER:
+
+Kaksi vaihtoehtoa:
+
+NYT: const [RH1, RH2, RH3] -> Randomizer jne
+
+------->>>>>>VAI:
+
+Randomizer [1, 2, 3] jne
+-> if [1], then RH1 jne.
+
+(Eli olisiko sittenkin fiksumpaa hakea ensin satunnainen numero ja sitten käyttää sitä if-else-logiikan kanssa?)
