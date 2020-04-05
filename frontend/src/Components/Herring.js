@@ -58,14 +58,14 @@ const herringGenerator3 = (items, negative) => {
 */
 const getQuestion = () => herringGenerator1(
     fakeVerb, fakeNoun, fakeTagYes, fakeTagNo)
-const tagYes = fakeTagYes[Math.floor(Math.random() * fakeTagYes.length)];
-const tagNo = fakeTagNo[Math.floor(Math.random() * fakeTagNo.length)];
+
 
 export default function Herring(props) {
 
     const [answer, setanswer] = useState(undefined);
     const [question, setquestion] = useState(undefined);
-
+    const tagYes = fakeTagYes[Math.floor(Math.random() * fakeTagYes.length)];
+    const tagNo = fakeTagNo[Math.floor(Math.random() * fakeTagNo.length)];
 
     return (
         <div>
@@ -96,11 +96,11 @@ switch (question) {
       break;
     case 2:
      const herringQuestion2 = herringGenerator2(
-          fakeVerb, fakeNoun, fakeTagYes, fakeTagNo);;
+          item1, positive1, item2, positive2);
       break;
     case 3:
-     const herringQuestion2 = herringGenerator2(
-          fakeVerb, fakeNoun, fakeTagYes, fakeTagNo);;
+     const herringQuestion3 = herringGenerator3(
+          item1, negative1, item2, negative2);
       break;
   }
   */
