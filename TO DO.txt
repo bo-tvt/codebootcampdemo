@@ -1,0 +1,38 @@
+- Fix the button
+---> Add a button to get a question in the first place.
+
+-- Yes ja no napit:
+Tallenna state vastauksen mukaan (myös undefined). Jos undefined -> ei tagia, muuten oikeasta tietokannasta.
+(Lunttaa: squeeze fruits)
+
+
+const squeezeFruits = () => {
+  const fruitsElem = document.getElementById("fruits");
+  fruitsElem.classList.toggle("squeezed");
+};
+
+- Push the databases onto the server
+
+- Add stuff to the Herring databases
+
+- Break the randomizer down: randomizer first, content generation next
+
+IF-ELSE:
+
+  .then(result => {
+if(result.rowCount > 0) {
+  res.send("OK");
+} else {
+  res.status(404).send("Not found!")
+}
+
+DATA TO THE DATABASE:
+
+const pgp = require( 'pg-promise' )();
+const db = pgp({
+  host: 'localhost',
+  port: 5432,
+  database: 'demo',
+  user: 'postgres',
+  password: 'RichardHerring'
+});

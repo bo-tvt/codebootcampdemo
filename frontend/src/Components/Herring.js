@@ -22,7 +22,6 @@ const pick = question[rnd];
 
 Rakenna logiikka: if 0 -> kysymyksen 1 logiikka, muuten q2 tai q3 helpommin.
 
-pick
 */
 
 const herringGenerator1 = (verbs, nouns) => {
@@ -57,29 +56,51 @@ const herringGenerator3 = (items, negative) => {
     which would you choose, if you HAD to?`
 }
 */
+const getQuestion = () => herringGenerator1(
+    fakeVerb, fakeNoun, fakeTagYes, fakeTagNo)
+const tagYes = fakeTagYes[Math.floor(Math.random() * fakeTagYes.length)];
+const tagNo = fakeTagNo[Math.floor(Math.random() * fakeTagNo.length)];
 
 export default function Herring(props) {
 
-    const [answer, setanswer]= useState(undefined);
-    const herringQuestion1 = herringGenerator1(
-        fakeVerb, fakeNoun, fakeTagYes, fakeTagNo)
-        const tagYes = fakeTagYes[Math.floor(Math.random() * fakeTagYes.length)];
-        const tagNo = fakeTagNo[Math.floor(Math.random() * fakeTagNo.length)];
-    return(
+    const [answer, setanswer] = useState(undefined);
+    const [question, setquestion] = useState(undefined);
+
+
+    return (
         <div>
-{herringQuestion1} 
-<button onClick={() => setanswer("yes")}>Yes</button>
-<button onClick={() => setanswer("no")}>No</button>
-{answer && (answer==="yes"? tagYes.name: tagNo.name)}
+            <button onClick={() => { setquestion(getQuestion()); setanswer(undefined) }}>Ask me a question!</button>
+            {question}
+            <button onClick={() => setanswer("yes")}>Yes</button>
+            <button onClick={() => setanswer("no")}>No</button>
+            {answer && (answer === "yes" ? tagYes.name : tagNo.name)}
         </div>
+
     )
 }
 
-/*    
+/*
 const tagYes = tagsYes[Math.floor(Math.random() * tagsYes.length)];
-const tagNo = tagsNo[Math.floor(Math.random() * tagsNo.length)]; 
+const tagNo = tagsNo[Math.floor(Math.random() * tagsNo.length)];
 
 return `Have you ever ${verb.name} ${noun.name}?`
 
 IDEA: Loppuun "Ask me another"-nappi, joka lataa koko jutun uudestaan.
 */
+
+/*
+switch (question) {
+    case 1:
+      const herringQuestion1 = herringGenerator1(
+          fakeVerb, fakeNoun, fakeTagYes, fakeTagNo);
+      break;
+    case 2:
+     const herringQuestion2 = herringGenerator2(
+          fakeVerb, fakeNoun, fakeTagYes, fakeTagNo);;
+      break;
+    case 3:
+     const herringQuestion2 = herringGenerator2(
+          fakeVerb, fakeNoun, fakeTagYes, fakeTagNo);;
+      break;
+  }
+  */
