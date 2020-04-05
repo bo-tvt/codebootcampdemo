@@ -80,15 +80,6 @@ export default function Herring(props) {
 }
 
 /*
-const tagYes = tagsYes[Math.floor(Math.random() * tagsYes.length)];
-const tagNo = tagsNo[Math.floor(Math.random() * tagsNo.length)];
-
-return `Have you ever ${verb.name} ${noun.name}?`
-
-IDEA: Loppuun "Ask me another"-nappi, joka lataa koko jutun uudestaan.
-*/
-
-/*
 switch (question) {
     case 1:
       const herringQuestion1 = herringGenerator1(

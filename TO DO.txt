@@ -1,9 +1,7 @@
-- Fix the button
----> Add a button to get a question in the first place.
+
 
 -- Yes ja no napit:
-Tallenna state vastauksen mukaan (myös undefined). Jos undefined -> ei tagia, muuten oikeasta tietokannasta.
-(Lunttaa: squeeze fruits)
+Eivät nyt hae uutta sisältöä, jos koko sivua ei ladata uudestaan.
 
 
 const squeezeFruits = () => {
