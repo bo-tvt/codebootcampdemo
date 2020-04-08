@@ -1,28 +1,10 @@
 
+Pull data from server (steal from sample)
 
--- Yes ja no napit:
-Eivät nyt hae uutta sisältöä, jos koko sivua ei ladata uudestaan.
-
-
-const squeezeFruits = () => {
-  const fruitsElem = document.getElementById("fruits");
-  fruitsElem.classList.toggle("squeezed");
-};
-
-- Push the databases onto the server
+Update CSS: images, etc.
 
 - Add stuff to the Herring databases
-
-- Break the randomizer down: randomizer first, content generation next
-
-IF-ELSE:
-
-  .then(result => {
-if(result.rowCount > 0) {
-  res.send("OK");
-} else {
-  res.status(404).send("Not found!")
-}
+- Rename the buttons.
 
 DATA TO THE DATABASE:
 
