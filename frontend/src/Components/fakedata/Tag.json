@@ -1,12 +1,27 @@
 [
-    {"id": 1, "name": "Why or why not?"},
-    {"id": 2, "name": "Did you like it / would you like to?"},
-    {"id": 3, "name": "Would it be worth it? / Was it worth it?"},
-    {"id": 4, "name": "What would be / is the expected outcome?"},
-    {"id": 5, "name": "Can you guess whether I've done it?"},
-    {"id": 6, "name": "Would you do it (again) if I paid you £20?"},
-    {"id": 7, "name": "Was it / would it be hard?"},
-    {"id": 8, "name": "How did / would it make your mother feel to know you've done it?"},
-    {"id": 9, "name": "Can you name 10 people who have probably done it?"},
-    {"id": 10, "name": "Should that sort of thing be publicly confessed?"}
+  {
+    "id": 1,
+    "name": "I can't wait to see the headlines when the press learns of this interview."
+  },
+  { "id": 2, "name": "Interesting!" },
+  { "id": 3, "name": "I'll just write that down in my notebook." },
+  { "id": 4, "name": "That would've been my choice, as well." },
+  {
+    "id": 5,
+    "name": "Are you proud of how you answered that question? Don't bother trying to answer this one."
+  },
+  { "id": 6, "name": "I didn't take you for that sort of person!" },
+  { "id": 7, "name": "Are you sure? There's no going back!" },
+  {
+    "id": 8,
+    "name": "I hope you understand, I wouldn't ask these questions if I didn't need to know the answers."
+  },
+  {
+    "id": 9,
+    "name": "I hope you thought it through before you made your pick!"
+  },
+  {
+    "id": 10,
+    "name": "This is the sort of journalism that has sustained my career for more than a decade now. Yes, I'm proud of what I do!"
+  }
 ]
