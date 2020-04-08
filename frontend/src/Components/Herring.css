@@ -1,0 +1,17 @@
+body {
+  background-image: url("./rHerring.jpg");
+  background-repeat: no-repeat;
+  background-size: 120em 90em;
+}
+h1 {
+  background-color: black;
+  color: white;
+  font-size: larger;
+  width: fit-content;
+}
+h2 {
+  background-color: black;
+  color: white;
+  font-size: large;
+  width: fit-content;
+}
