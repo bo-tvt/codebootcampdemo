@@ -85,7 +85,8 @@ export default function Herring(props) {
   const [question, setquestion] = useState(undefined);
   const [answer, setanswer] = useState(undefined);
   const [choice, setchoice] = useState(undefined);
-  const [problem, setproblem] = useState(undefined);
+  /*const [problem, setproblem] = useState(undefined); This is a possible solution for 
+  implementing the answer/choice selection.*/
 
   return (
     <div>
