@@ -50,6 +50,21 @@ const getQuestion = (generatorType) => {
   }
 };
 
+/*
+const getQuestion = (generatorType, yes) => {
+    const tagYes = fakeTagYes[Math.floor(Math.random() * fakeTagYes.length)];
+  const tagNo = fakeTagNo[Math.floor(Math.random() * fakeTagNo.length)];
+    const tagNeutral = fakeTag[Math.floor(Math.random() * fakeTag.length)];
+  switch (generatorType) {
+    case 1:
+  return yes ? tagYes.name : tagNo.name;
+    case 2:
+    case 3:
+  return former ? tagNeutral.name : tagNeutral.name;
+  }
+};
+*/
+
 const getAnswer = (yes) => {
   const tagYes = fakeTagYes[Math.floor(Math.random() * fakeTagYes.length)];
   const tagNo = fakeTagNo[Math.floor(Math.random() * fakeTagNo.length)];
