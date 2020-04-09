@@ -11,7 +11,9 @@ import fakeTagNo from "../Components/fakedata/TagNo.json";
 import fakeItem from "../Components/fakedata/Item.json";
 import fakePositive from "../Components/fakedata/Positive.json";
 import fakeNegative from "../Components/fakedata/Negative.json";
+//This is the database until something better replaces it.
 
+//The three generators follow:
 const herringGenerator1 = (verbs, nouns) => {
   const verb = verbs[Math.floor(Math.random() * verbs.length)];
   const noun = nouns[Math.floor(Math.random() * nouns.length)];
@@ -39,6 +41,7 @@ const herringGenerator3 = (items, negative) => {
     which would you choose, if you HAD to?`;
 };
 
+//This implements the choice of question randomizer.
 const getQuestion = (generatorType) => {
   switch (generatorType) {
     case 1:
@@ -48,6 +51,18 @@ const getQuestion = (generatorType) => {
     case 3:
       return herringGenerator3(fakeItem, fakeNegative);
   }
+};
+
+//The following bits pick the answer tags. There's also an alternative in development.
+const getAnswer = (yes) => {
+  const tagYes = fakeTagYes[Math.floor(Math.random() * fakeTagYes.length)];
+  const tagNo = fakeTagNo[Math.floor(Math.random() * fakeTagNo.length)];
+  return yes ? tagYes.name : tagNo.name;
+};
+
+const getChoice = (former) => {
+  const tagNeutral = fakeTag[Math.floor(Math.random() * fakeTag.length)];
+  return former ? tagNeutral.name : tagNeutral.name;
 };
 
 /*
@@ -65,19 +80,8 @@ const getQuestion = (generatorType, yes) => {
 };
 */
 
-const getAnswer = (yes) => {
-  const tagYes = fakeTagYes[Math.floor(Math.random() * fakeTagYes.length)];
-  const tagNo = fakeTagNo[Math.floor(Math.random() * fakeTagNo.length)];
-  return yes ? tagYes.name : tagNo.name;
-};
-
-const getChoice = (former) => {
-  const tagNeutral = fakeTag[Math.floor(Math.random() * fakeTag.length)];
-  return former ? tagNeutral.name : tagNeutral.name;
-};
-
 export default function Herring(props) {
-  const generatorType = Math.floor(Math.random() * 3) + 1;
+  const generatorType = Math.floor(Math.random() * 3) + 1; // This is THE randomizer
   const [question, setquestion] = useState(undefined);
   const [answer, setanswer] = useState(undefined);
   const [choice, setchoice] = useState(undefined);
